@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { DASHBOARD_URL } from "../../config";
 
 function CreateTicket() {
   return (
@@ -58,9 +59,9 @@ function CreateTicket() {
             <i className="fa fa-credit-card me-2 text-primary" aria-hidden="true"></i> Funds
           </h4>
           <div className="d-flex flex-column gap-2" style={{ fontSize: "0.95em" }}>
-            <a href="http://localhost:3001/funds" className="text-decoration-none text-muted">Adding Funds</a>
-            <a href="http://localhost:3001/funds" className="text-decoration-none text-muted">Fund Withdrawal</a>
-            <a href="http://localhost:3001/funds" className="text-decoration-none text-muted">eMandates & Bank Accounts</a>
+            <a href={`${DASHBOARD_URL}/funds`} className="text-decoration-none text-muted">Adding Funds</a>
+            <a href={`${DASHBOARD_URL}/funds`} className="text-decoration-none text-muted">Fund Withdrawal</a>
+            <a href={`${DASHBOARD_URL}/funds`} className="text-decoration-none text-muted">eMandates & Bank Accounts</a>
           </div>
         </div>
 

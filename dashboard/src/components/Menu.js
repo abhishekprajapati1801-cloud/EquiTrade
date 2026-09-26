@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FRONTEND_URL } from "../config";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -24,7 +25,7 @@ const Menu = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("username");
-    window.location.href = "http://localhost:3000/login";
+    window.location.href = `${FRONTEND_URL}/login`;
   };
 
   const getInitials = (name) => {
@@ -41,7 +42,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <a href="http://localhost:3000">
+      <a href={FRONTEND_URL}>
         <img src="logo.png" style={{ width: "50px" }} alt="Kite Logo" />
       </a>
       <div className="menus">

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { DASHBOARD_URL } from "../config";
 
 function Navbar() {
   const [username, setUsername] = useState("");
@@ -44,7 +45,7 @@ function Navbar() {
             {username ? (
               <>
                 <li className="nav-item me-3">
-                  <a href="http://localhost:3001" className="btn btn-outline-primary btn-sm px-3">
+                  <a href={DASHBOARD_URL} className="btn btn-outline-primary btn-sm px-3">
                     Kite Dashboard ({username})
                   </a>
                 </li>

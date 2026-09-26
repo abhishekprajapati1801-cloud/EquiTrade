@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FRONTEND_URL } from "../config";
 
 const Funds = () => {
   const [availableMargin, setAvailableMargin] = useState(() => {
@@ -109,7 +110,7 @@ const Funds = () => {
           <div className="commodity p-4 border rounded bg-light text-center">
             <h5 className="fw-bold mb-2">Commodity Account</h5>
             <p className="text-muted">You don't have an active commodity segment.</p>
-            <a href="http://localhost:3000/support" className="btn btn-blue px-4 py-2">
+            <a href={`${FRONTEND_URL}/support`} className="btn btn-blue px-4 py-2">
               Activate Segment
             </a>
           </div>

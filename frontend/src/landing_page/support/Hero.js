@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { API_URL } from "../../config";
 
 // Knowledge Base Database
 const KNOWLEDGE_BASE = [
@@ -76,7 +77,7 @@ function Hero() {
 
   const fetchTickets = async () => {
     try {
-      const res = await axios.get("http://localhost:3002/support/tickets");
+      const res = await axios.get(`${API_URL}/support/tickets`);
       setTickets(res.data);
     } catch (err) {
       console.error("Failed to fetch tickets:", err);
@@ -90,7 +91,7 @@ function Hero() {
   const handleCreateTicket = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3002/support/newTicket", {
+      const res = await axios.post(`${API_URL}/support/newTicket`, {
         ...ticketForm,
         username: localStorage.getItem("username") || "Abhishek",
       });

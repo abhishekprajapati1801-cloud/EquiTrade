@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { DASHBOARD_URL } from "../config";
 
 function Footer() {
   const scrollToTop = () => {
@@ -48,7 +49,7 @@ function Footer() {
             <h5 className="fs-6 fw-bold mb-3 text-dark">Account</h5>
             <ul className="list-unstyled" style={{ lineHeight: "2.2", fontSize: "15px" }}>
               <li><Link to="/signup" onClick={scrollToTop} className="text-decoration-none text-secondary">Open an account</Link></li>
-              <li><a href="http://localhost:3001/funds" className="text-decoration-none text-secondary">Fund transfer</a></li>
+              <li><a href={`${DASHBOARD_URL}/funds`} className="text-decoration-none text-secondary">Fund transfer</a></li>
               <li><Link to="/signup" onClick={scrollToTop} className="text-decoration-none text-secondary">60 day challenge</Link></li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { API_URL, DASHBOARD_URL } from "../../config";
 
 function Signup() {
   const navigate = useNavigate();
@@ -22,13 +23,13 @@ function Signup() {
     setSuccess("");
 
     try {
-      const response = await axios.post("http://localhost:3002/auth/signup", formData);
+      const response = await axios.post(`${API_URL}/auth/signup`, formData);
       if (response.data.success) {
         setSuccess("Signup successful! Redirecting to Dashboard...");
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("username", response.data.username);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = DASHBOARD_URL;
         }, 1500);
       }
     } catch (err) {
