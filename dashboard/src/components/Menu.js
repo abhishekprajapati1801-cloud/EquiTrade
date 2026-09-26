@@ -43,7 +43,7 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <a href={FRONTEND_URL}>
-        <img src="logo.png" style={{ width: "50px" }} alt="Kite Logo" />
+        <img src="/logo.png" style={{ width: "50px" }} alt="Kite Logo" />
       </a>
       <div className="menus">
         <ul>
