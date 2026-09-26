@@ -41,7 +41,7 @@ function Login() {
       <div className="row justify-content-center align-items-center my-5">
         <div className="col-lg-6 text-center">
           <img
-            src="/media/images/signup.png"
+            src="/Media/images/signup.png"
             alt="Login Banner"
             style={{ width: "85%", height: "auto" }}
           />

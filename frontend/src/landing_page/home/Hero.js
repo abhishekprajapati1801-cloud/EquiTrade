@@ -6,7 +6,7 @@ function Hero() {
     <div className="container p-5 mb-5">
       <div className="row text-center">
         <img
-          src="/media/images/homeHero.png"
+          src="/Media/images/homeHero.png"
           alt="Home Hero Banner"
           className="mb-5"
         />

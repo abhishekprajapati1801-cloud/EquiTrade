@@ -13,7 +13,7 @@ function Footer() {
         <div className="row">
           <div className="col-md-3 mb-4">
             <Link to="/" onClick={scrollToTop}>
-              <img src="/media/images/logo.svg" style={{ width: "50%", minWidth: "120px" }} alt="Zerodha Logo" />
+              <img src="/Media/images/logo.svg" style={{ width: "50%", minWidth: "120px" }} alt="Zerodha Logo" />
             </Link>
             <p className="mt-3 text-muted" style={{ fontSize: "14px" }}>
               &copy; 2010 - 2024, Zerodha Broking Ltd. All rights reserved.

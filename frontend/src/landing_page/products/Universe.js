@@ -11,27 +11,27 @@ function Universe() {
         </p>
 
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="/media/images/smallcaseLogo.png" alt="Smallcase" />
+          <img src="/Media/images/smallcaseLogo.png" alt="Smallcase" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <button

@@ -13,7 +13,7 @@ function Team() {
       >
         <div className="col-md-5 p-3 text-center">
           <img
-            src="/media/images/abhishek.jpg"
+            src="/Media/images/abhishek.jpg"
             alt="Abhishek"
             style={{ borderRadius: "50%", width: "240px", height: "240px", objectFit: "cover", boxShadow: "0 4px 14px rgba(0,0,0,0.18)" }}
           />
